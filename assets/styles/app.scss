@@ -1,0 +1,17 @@
+$headings-color: rgb(7, 88, 73);
+$primary-color: rgb(99, 41, 185);
+
+@import "~bootstrap/scss/bootstrap";
+
+
+body {
+  background-color: white;
+}
+
+footer {
+  margin: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
