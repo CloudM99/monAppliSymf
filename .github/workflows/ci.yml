@@ -2,7 +2,7 @@ name: Pipeline-CI
 
 on:
   push:
-    branches: [ main ]  # Assurez-vous que cela correspond à votre branche principale
+    branches: [ master ]  # Assurez-vous que cela correspond à votre branche principale
 
 jobs:
   ci:
