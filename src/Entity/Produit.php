@@ -75,7 +75,8 @@ class Produit
      * @var Collection<int, Distributeur>
      * La collection de distributeurs associés à ce produit.
      */
-    #[ORM\ManyToMany(targetEntity: Distributeur::class, cascade:["persist"],mappedBy: 'produits')]
+    #[ORM\ManyToMany(targetEntity: Distributeur::class, cascade:["persist"],inversedBy: 'produits')]
+
     private Collection $distributeurs;
 
     /**
