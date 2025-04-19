@@ -1,0 +1,240 @@
+{
+    "name": "App\\Entity\\Distributeur",
+    "line": 13,
+    "short_desc": "Repr\u00e9sente une entit\u00e9 de distributeur avec une collection de produits.",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Entity",
+    "file": "C:\\xampp\\www\\monAppliSymf\/src\\Entity\\Distributeur.php",
+    "relative_file": null,
+    "hash": "1e96bd2a55ef7fa47b6fc301d7f6421d281d1094",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "DistributeurRepository": "App\\Repository\\DistributeurRepository",
+        "ArrayCollection": "Doctrine\\Common\\Collections\\ArrayCollection",
+        "Collection": "Doctrine\\Common\\Collections\\Collection",
+        "ORM": "Doctrine\\ORM\\Mapping"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 40,
+            "short_desc": "Constructeur pour initialiser la collection de produits.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getId": {
+            "name": "getId",
+            "line": 50,
+            "short_desc": "Obtenir l'identifiant unique du distributeur.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getNom": {
+            "name": "getNom",
+            "line": 60,
+            "short_desc": "Obtenir le nom du distributeur.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setNom": {
+            "name": "setNom",
+            "line": 71,
+            "short_desc": "D\u00e9finir le nom du distributeur.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "App\\Entity\\Distributeur",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "nom": {
+                    "name": "nom",
+                    "line": 71,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "getProduits": {
+            "name": "getProduits",
+            "line": 83,
+            "short_desc": "Obtenir la collection de produits associ\u00e9s \u00e0 ce distributeur.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Doctrine\\Common\\Collections\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "addProduit": {
+            "name": "addProduit",
+            "line": 94,
+            "short_desc": "Ajouter un produit au distributeur.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "App\\Entity\\Distributeur",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "produit": {
+                    "name": "produit",
+                    "line": 94,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Entity\\Produit",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "removeProduit": {
+            "name": "removeProduit",
+            "line": 109,
+            "short_desc": "Retirer un produit du distributeur.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "App\\Entity\\Distributeur",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "produit": {
+                    "name": "produit",
+                    "line": 109,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Entity\\Produit",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,251 @@
+{
+    "name": "App\\Security\\CustomAuthenticator",
+    "line": 19,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Security",
+    "file": "C:\\xampp\\www\\monAppliSymf\/src\\Security\\CustomAuthenticator.php",
+    "relative_file": null,
+    "hash": "945141ec19962c9ea208fca0ae844db4e581fe55",
+    "parent": "Symfony\\Component\\Security\\Http\\Authenticator\\AbstractLoginFormAuthenticator",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "RedirectResponse": "Symfony\\Component\\HttpFoundation\\RedirectResponse",
+        "Request": "Symfony\\Component\\HttpFoundation\\Request",
+        "Response": "Symfony\\Component\\HttpFoundation\\Response",
+        "UrlGeneratorInterface": "Symfony\\Component\\Routing\\Generator\\UrlGeneratorInterface",
+        "TokenInterface": "Symfony\\Component\\Security\\Core\\Authentication\\Token\\TokenInterface",
+        "AbstractLoginFormAuthenticator": "Symfony\\Component\\Security\\Http\\Authenticator\\AbstractLoginFormAuthenticator",
+        "CsrfTokenBadge": "Symfony\\Component\\Security\\Http\\Authenticator\\Passport\\Badge\\CsrfTokenBadge",
+        "RememberMeBadge": "Symfony\\Component\\Security\\Http\\Authenticator\\Passport\\Badge\\RememberMeBadge",
+        "UserBadge": "Symfony\\Component\\Security\\Http\\Authenticator\\Passport\\Badge\\UserBadge",
+        "PasswordCredentials": "Symfony\\Component\\Security\\Http\\Authenticator\\Passport\\Credentials\\PasswordCredentials",
+        "Passport": "Symfony\\Component\\Security\\Http\\Authenticator\\Passport\\Passport",
+        "SecurityRequestAttributes": "Symfony\\Component\\Security\\Http\\SecurityRequestAttributes",
+        "TargetPathTrait": "Symfony\\Component\\Security\\Http\\Util\\TargetPathTrait"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Symfony\\Component\\Security\\Http\\Util\\TargetPathTrait": "Symfony\\Component\\Security\\Http\\Util\\TargetPathTrait"
+    },
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 25,
+            "short_desc": null,
+            "long_desc": null,
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "urlGenerator": {
+                    "name": "urlGenerator",
+                    "line": 25,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Symfony\\Component\\Routing\\Generator\\UrlGeneratorInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 4,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "authenticate": {
+            "name": "authenticate",
+            "line": 29,
+            "short_desc": null,
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Symfony\\Component\\Security\\Http\\Authenticator\\Passport\\Passport",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 29,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Symfony\\Component\\HttpFoundation\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "onAuthenticationSuccess": {
+            "name": "onAuthenticationSuccess",
+            "line": 45,
+            "short_desc": null,
+            "long_desc": null,
+            "hint": [
+                [
+                    "App\\Security\\Symfony\\Component\\HttpFoundation\\Response",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 45,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Symfony\\Component\\HttpFoundation\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                },
+                "token": {
+                    "name": "token",
+                    "line": 45,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Symfony\\Component\\Security\\Core\\Authentication\\Token\\TokenInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                },
+                "firewallName": {
+                    "name": "firewallName",
+                    "line": 45,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "getLoginUrl": {
+            "name": "getLoginUrl",
+            "line": 57,
+            "short_desc": null,
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 57,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Symfony\\Component\\HttpFoundation\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        }
+    },
+    "constants": {
+        "LOGIN_ROUTE": {
+            "name": "LOGIN_ROUTE",
+            "line": 23,
+            "short_desc": null,
+            "long_desc": null,
+            "modifiers": 1,
+            "tags": []
+        }
+    }
+}

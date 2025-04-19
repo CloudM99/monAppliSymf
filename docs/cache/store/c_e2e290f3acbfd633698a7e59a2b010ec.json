@@ -1,0 +1,94 @@
+{
+    "name": "App\\DataFixtures\\UpdateImgProduitFixtures",
+    "line": 15,
+    "short_desc": "Classe UpdateImgProduitFixtures",
+    "long_desc": "Cette classe de fixtures met \u00e0 jour les liens d'images pour les produits existants dans la base de donn\u00e9es.",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\DataFixtures",
+    "file": "C:\\xampp\\www\\monAppliSymf\/src\\DataFixtures\\UpdateImgProduitFixtures.php",
+    "relative_file": null,
+    "hash": "4a875593fc661b276d6e79ec05a9ff397ffdf9eb",
+    "parent": "Doctrine\\Bundle\\FixturesBundle\\Fixture",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "Fixture": "Doctrine\\Bundle\\FixturesBundle\\Fixture",
+        "ObjectManager": "Doctrine\\Persistence\\ObjectManager",
+        "FixtureGroupInterface": "Doctrine\\Bundle\\FixturesBundle\\FixtureGroupInterface",
+        "Produit": "App\\Entity\\Produit"
+    },
+    "errors": [],
+    "interfaces": {
+        "Doctrine\\Bundle\\FixturesBundle\\FixtureGroupInterface": "Doctrine\\Bundle\\FixturesBundle\\FixtureGroupInterface"
+    },
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "load": {
+            "name": "load",
+            "line": 22,
+            "short_desc": "Met \u00e0 jour les liens d'images pour les produits.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "manager": {
+                    "name": "manager",
+                    "line": 22,
+                    "short_desc": "Le gestionnaire d'objets Doctrine",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Doctrine\\Persistence\\ObjectManager",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "getGroups": {
+            "name": "getGroups",
+            "line": 59,
+            "short_desc": "Retourne les groupes auxquels cette fixture appartient.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 9,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

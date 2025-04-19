@@ -1,0 +1,308 @@
+{
+    "name": "App\\Security\\ApiKeyAuthenticator",
+    "line": 18,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Security",
+    "file": "C:\\xampp\\www\\monAppliSymf\/src\\Security\\ApiKeyAuthenticator.php",
+    "relative_file": null,
+    "hash": "99558296c58a89418962a39d558dcffba4060d97",
+    "parent": "Symfony\\Component\\Security\\Http\\Authenticator\\AbstractAuthenticator",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "JsonResponse": "Symfony\\Component\\HttpFoundation\\JsonResponse",
+        "Request": "Symfony\\Component\\HttpFoundation\\Request",
+        "Response": "Symfony\\Component\\HttpFoundation\\Response",
+        "TokenInterface": "Symfony\\Component\\Security\\Core\\Authentication\\Token\\TokenInterface",
+        "AuthenticationException": "Symfony\\Component\\Security\\Core\\Exception\\AuthenticationException",
+        "CustomUserMessageAuthenticationException": "Symfony\\Component\\Security\\Core\\Exception\\CustomUserMessageAuthenticationException",
+        "AbstractAuthenticator": "Symfony\\Component\\Security\\Http\\Authenticator\\AbstractAuthenticator",
+        "UserBadge": "Symfony\\Component\\Security\\Http\\Authenticator\\Passport\\Badge\\UserBadge",
+        "Passport": "Symfony\\Component\\Security\\Http\\Authenticator\\Passport\\Passport",
+        "SelfValidatingPassport": "Symfony\\Component\\Security\\Http\\Authenticator\\Passport\\SelfValidatingPassport",
+        "EntityManagerInterface": "Doctrine\\ORM\\EntityManagerInterface",
+        "ObjectManager": "Doctrine\\Persistence\\ObjectManager",
+        "User": "App\\Entity\\User"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "supports": {
+            "name": "supports",
+            "line": 25,
+            "short_desc": "Called on every request to decide if this authenticator should be\nused for the request. Returning `false` will cause this authenticator\nto be skipped.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 25,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Symfony\\Component\\HttpFoundation\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "__construct": {
+            "name": "__construct",
+            "line": 29,
+            "short_desc": null,
+            "long_desc": null,
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "entityManager": {
+                    "name": "entityManager",
+                    "line": 29,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Doctrine\\ORM\\EntityManagerInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 1,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "authenticate": {
+            "name": "authenticate",
+            "line": 33,
+            "short_desc": null,
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Symfony\\Component\\Security\\Http\\Authenticator\\Passport\\Passport",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 33,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Symfony\\Component\\HttpFoundation\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "onAuthenticationSuccess": {
+            "name": "onAuthenticationSuccess",
+            "line": 53,
+            "short_desc": null,
+            "long_desc": null,
+            "hint": [
+                [
+                    "App\\Security\\Symfony\\Component\\HttpFoundation\\Response",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 53,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Symfony\\Component\\HttpFoundation\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                },
+                "token": {
+                    "name": "token",
+                    "line": 53,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Symfony\\Component\\Security\\Core\\Authentication\\Token\\TokenInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                },
+                "firewallName": {
+                    "name": "firewallName",
+                    "line": 54,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "onAuthenticationFailure": {
+            "name": "onAuthenticationFailure",
+            "line": 60,
+            "short_desc": null,
+            "long_desc": null,
+            "hint": [
+                [
+                    "App\\Security\\Symfony\\Component\\HttpFoundation\\Response",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 60,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Symfony\\Component\\HttpFoundation\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                },
+                "exception": {
+                    "name": "exception",
+                    "line": 61,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Symfony\\Component\\Security\\Core\\Exception\\AuthenticationException",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

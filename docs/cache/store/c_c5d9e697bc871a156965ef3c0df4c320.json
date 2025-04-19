@@ -1,0 +1,127 @@
+{
+    "name": "App\\Form\\ProduitType",
+    "line": 23,
+    "short_desc": "Formulaire ProduitType",
+    "long_desc": "Ce formulaire est utilis\u00e9 pour cr\u00e9er et mettre \u00e0 jour des produits.\nIl inclut des champs pour le nom, le prix, la quantit\u00e9, l'\u00e9tat de rupture de stock,\nl'image, la r\u00e9f\u00e9rence, et les distributeurs associ\u00e9s.",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Form",
+    "file": "C:\\xampp\\www\\monAppliSymf\/src\\Form\\ProduitType.php",
+    "relative_file": null,
+    "hash": "a7c3d835f8cf22e6459933e2de1263866428d4b3",
+    "parent": "Symfony\\Component\\Form\\AbstractType",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "Produit": "App\\Entity\\Produit",
+        "Distributeur": "App\\Entity\\Distributeur",
+        "MyCheckboxType": "App\\Form\\Type\\MyCheckboxType",
+        "AbstractType": "Symfony\\Component\\Form\\AbstractType",
+        "FormBuilderInterface": "Symfony\\Component\\Form\\FormBuilderInterface",
+        "OptionsResolver": "Symfony\\Component\\OptionsResolver\\OptionsResolver",
+        "EntityType": "Symfony\\Bridge\\Doctrine\\Form\\Type\\EntityType",
+        "TextType": "Symfony\\Component\\Form\\Extension\\Core\\Type\\TextType",
+        "NumberType": "Symfony\\Component\\Form\\Extension\\Core\\Type\\NumberType",
+        "FileType": "Symfony\\Component\\Form\\Extension\\Core\\Type\\FileType"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "buildForm": {
+            "name": "buildForm",
+            "line": 31,
+            "short_desc": "Construit le formulaire.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "builder": {
+                    "name": "builder",
+                    "line": 31,
+                    "short_desc": "Le constructeur de formulaire",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Symfony\\Component\\Form\\FormBuilderInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                },
+                "options": {
+                    "name": "options",
+                    "line": 31,
+                    "short_desc": "Les options du formulaire",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "configureOptions": {
+            "name": "configureOptions",
+            "line": 74,
+            "short_desc": "Configure les options du formulaire.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "resolver": {
+                    "name": "resolver",
+                    "line": 74,
+                    "short_desc": "Le r\u00e9solveur d'options",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Symfony\\Component\\OptionsResolver\\OptionsResolver",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

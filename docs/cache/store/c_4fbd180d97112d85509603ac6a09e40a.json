@@ -1,0 +1,71 @@
+{
+    "name": "App\\DataFixtures\\ProduitFixtures",
+    "line": 15,
+    "short_desc": "Classe ProduitFixtures",
+    "long_desc": "Cette classe de fixtures charge une liste de produits de test dans la base de donn\u00e9es.",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\DataFixtures",
+    "file": "C:\\xampp\\www\\monAppliSymf\/src\\DataFixtures\\ProduitFixtures.php",
+    "relative_file": null,
+    "hash": "65e5e6634571e6239671f6cf561e39ef409a55bc",
+    "parent": "Doctrine\\Bundle\\FixturesBundle\\Fixture",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "Fixture": "Doctrine\\Bundle\\FixturesBundle\\Fixture",
+        "ObjectManager": "Doctrine\\Persistence\\ObjectManager",
+        "ListeProduits": "App\\Data\\ListeProduits",
+        "Produit": "App\\Entity\\Produit"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "load": {
+            "name": "load",
+            "line": 22,
+            "short_desc": "Charge les produits de test dans la base de donn\u00e9es.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "manager": {
+                    "name": "manager",
+                    "line": 22,
+                    "short_desc": "Le gestionnaire d'objets Doctrine",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Doctrine\\Persistence\\ObjectManager",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

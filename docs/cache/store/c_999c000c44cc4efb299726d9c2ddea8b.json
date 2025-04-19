@@ -1,0 +1,984 @@
+{
+    "name": "App\\Data\\ListeProduits",
+    "line": 15,
+    "short_desc": "Classe ListeProduits",
+    "long_desc": "Cette classe contient une liste statique de produits avec leurs attributs.\nChaque produit est repr\u00e9sent\u00e9 par un tableau associatif avec les cl\u00e9s suivantes :\n- nom : Le nom du produit.\n- prix : Le prix du produit.\n- quantite : La quantit\u00e9 disponible du produit.\n- rupture : Indique si le produit est en rupture de stock (true) ou non (false).",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Data",
+    "file": "C:\\xampp\\www\\monAppliSymf\/src\\Data\\ListeProduits.php",
+    "relative_file": null,
+    "hash": "986cd03e44a3824952e4bb32585a68bc7e240639",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "mesProduits": {
+            "name": "mesProduits",
+            "line": 21,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "Liste statique de produits.\nChaque produit est un tableau associatif contenant les cl\u00e9s \"nom\", \"prix\", \"quantite\" et \"rupture\".",
+            "tags": [],
+            "modifiers": 9,
+            "default": {
+                "nodeType": "Expr_Array",
+                "attributes": {
+                    "startLine": 21,
+                    "endLine": 28,
+                    "kind": 2
+                },
+                "items": [
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "attributes": {
+                            "startLine": 22,
+                            "endLine": 22
+                        },
+                        "key": null,
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "attributes": {
+                                "startLine": 22,
+                                "endLine": 22,
+                                "kind": 2
+                            },
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 22,
+                                        "endLine": 22
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 22,
+                                            "endLine": 22,
+                                            "kind": 2,
+                                            "rawValue": "\"nom\""
+                                        },
+                                        "value": "nom"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 22,
+                                            "endLine": 22,
+                                            "kind": 2,
+                                            "rawValue": "\"imprimantes\""
+                                        },
+                                        "value": "imprimantes"
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 22,
+                                        "endLine": 22
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 22,
+                                            "endLine": 22,
+                                            "kind": 2,
+                                            "rawValue": "\"prix\""
+                                        },
+                                        "value": "prix"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_LNumber",
+                                        "attributes": {
+                                            "startLine": 22,
+                                            "endLine": 22,
+                                            "rawValue": "700",
+                                            "kind": 10
+                                        },
+                                        "value": 700
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 22,
+                                        "endLine": 22
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 22,
+                                            "endLine": 22,
+                                            "kind": 2,
+                                            "rawValue": "\"quantite\""
+                                        },
+                                        "value": "quantite"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_LNumber",
+                                        "attributes": {
+                                            "startLine": 22,
+                                            "endLine": 22,
+                                            "rawValue": "10",
+                                            "kind": 10
+                                        },
+                                        "value": 10
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 22,
+                                        "endLine": 22
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 22,
+                                            "endLine": 22,
+                                            "kind": 2,
+                                            "rawValue": "\"rupture\""
+                                        },
+                                        "value": "rupture"
+                                    },
+                                    "value": {
+                                        "nodeType": "Expr_ConstFetch",
+                                        "attributes": {
+                                            "startLine": 22,
+                                            "endLine": 22
+                                        },
+                                        "name": {
+                                            "nodeType": "Name",
+                                            "attributes": {
+                                                "startLine": 22,
+                                                "endLine": 22,
+                                                "namespacedName": {
+                                                    "nodeType": "Name_FullyQualified",
+                                                    "attributes": {
+                                                        "startLine": 22,
+                                                        "endLine": 22
+                                                    },
+                                                    "parts": [
+                                                        "App",
+                                                        "Data",
+                                                        "false"
+                                                    ]
+                                                }
+                                            },
+                                            "parts": [
+                                                "false"
+                                            ]
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                }
+                            ]
+                        },
+                        "byRef": false,
+                        "unpack": false
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "attributes": {
+                            "startLine": 23,
+                            "endLine": 23
+                        },
+                        "key": null,
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "attributes": {
+                                "startLine": 23,
+                                "endLine": 23,
+                                "kind": 2
+                            },
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 23,
+                                        "endLine": 23
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 23,
+                                            "endLine": 23,
+                                            "kind": 2,
+                                            "rawValue": "\"nom\""
+                                        },
+                                        "value": "nom"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 23,
+                                            "endLine": 23,
+                                            "kind": 2,
+                                            "rawValue": "\"cartouches encre\""
+                                        },
+                                        "value": "cartouches encre"
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 23,
+                                        "endLine": 23
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 23,
+                                            "endLine": 23,
+                                            "kind": 2,
+                                            "rawValue": "\"prix\""
+                                        },
+                                        "value": "prix"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_LNumber",
+                                        "attributes": {
+                                            "startLine": 23,
+                                            "endLine": 23,
+                                            "rawValue": "80",
+                                            "kind": 10
+                                        },
+                                        "value": 80
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 23,
+                                        "endLine": 23
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 23,
+                                            "endLine": 23,
+                                            "kind": 2,
+                                            "rawValue": "\"quantite\""
+                                        },
+                                        "value": "quantite"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_LNumber",
+                                        "attributes": {
+                                            "startLine": 23,
+                                            "endLine": 23,
+                                            "rawValue": "50",
+                                            "kind": 10
+                                        },
+                                        "value": 50
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 23,
+                                        "endLine": 23
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 23,
+                                            "endLine": 23,
+                                            "kind": 2,
+                                            "rawValue": "\"rupture\""
+                                        },
+                                        "value": "rupture"
+                                    },
+                                    "value": {
+                                        "nodeType": "Expr_ConstFetch",
+                                        "attributes": {
+                                            "startLine": 23,
+                                            "endLine": 23
+                                        },
+                                        "name": {
+                                            "nodeType": "Name",
+                                            "attributes": {
+                                                "startLine": 23,
+                                                "endLine": 23,
+                                                "namespacedName": {
+                                                    "nodeType": "Name_FullyQualified",
+                                                    "attributes": {
+                                                        "startLine": 23,
+                                                        "endLine": 23
+                                                    },
+                                                    "parts": [
+                                                        "App",
+                                                        "Data",
+                                                        "false"
+                                                    ]
+                                                }
+                                            },
+                                            "parts": [
+                                                "false"
+                                            ]
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                }
+                            ]
+                        },
+                        "byRef": false,
+                        "unpack": false
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "attributes": {
+                            "startLine": 24,
+                            "endLine": 24
+                        },
+                        "key": null,
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "attributes": {
+                                "startLine": 24,
+                                "endLine": 24,
+                                "kind": 2
+                            },
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 24,
+                                        "endLine": 24
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 24,
+                                            "endLine": 24,
+                                            "kind": 2,
+                                            "rawValue": "\"nom\""
+                                        },
+                                        "value": "nom"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 24,
+                                            "endLine": 24,
+                                            "kind": 2,
+                                            "rawValue": "\"ordinateurs\""
+                                        },
+                                        "value": "ordinateurs"
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 24,
+                                        "endLine": 24
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 24,
+                                            "endLine": 24,
+                                            "kind": 2,
+                                            "rawValue": "\"prix\""
+                                        },
+                                        "value": "prix"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_LNumber",
+                                        "attributes": {
+                                            "startLine": 24,
+                                            "endLine": 24,
+                                            "rawValue": "1700",
+                                            "kind": 10
+                                        },
+                                        "value": 1700
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 24,
+                                        "endLine": 24
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 24,
+                                            "endLine": 24,
+                                            "kind": 2,
+                                            "rawValue": "\"quantite\""
+                                        },
+                                        "value": "quantite"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_LNumber",
+                                        "attributes": {
+                                            "startLine": 24,
+                                            "endLine": 24,
+                                            "rawValue": "3",
+                                            "kind": 10
+                                        },
+                                        "value": 3
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 24,
+                                        "endLine": 24
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 24,
+                                            "endLine": 24,
+                                            "kind": 2,
+                                            "rawValue": "\"rupture\""
+                                        },
+                                        "value": "rupture"
+                                    },
+                                    "value": {
+                                        "nodeType": "Expr_ConstFetch",
+                                        "attributes": {
+                                            "startLine": 24,
+                                            "endLine": 24
+                                        },
+                                        "name": {
+                                            "nodeType": "Name",
+                                            "attributes": {
+                                                "startLine": 24,
+                                                "endLine": 24,
+                                                "namespacedName": {
+                                                    "nodeType": "Name_FullyQualified",
+                                                    "attributes": {
+                                                        "startLine": 24,
+                                                        "endLine": 24
+                                                    },
+                                                    "parts": [
+                                                        "App",
+                                                        "Data",
+                                                        "false"
+                                                    ]
+                                                }
+                                            },
+                                            "parts": [
+                                                "false"
+                                            ]
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                }
+                            ]
+                        },
+                        "byRef": false,
+                        "unpack": false
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "attributes": {
+                            "startLine": 25,
+                            "endLine": 25
+                        },
+                        "key": null,
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "attributes": {
+                                "startLine": 25,
+                                "endLine": 25,
+                                "kind": 2
+                            },
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 25,
+                                        "endLine": 25
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 25,
+                                            "endLine": 25,
+                                            "kind": 2,
+                                            "rawValue": "\"nom\""
+                                        },
+                                        "value": "nom"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 25,
+                                            "endLine": 25,
+                                            "kind": 2,
+                                            "rawValue": "\"\u00e9crans\""
+                                        },
+                                        "value": "\u00e9crans"
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 25,
+                                        "endLine": 25
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 25,
+                                            "endLine": 25,
+                                            "kind": 2,
+                                            "rawValue": "\"prix\""
+                                        },
+                                        "value": "prix"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_LNumber",
+                                        "attributes": {
+                                            "startLine": 25,
+                                            "endLine": 25,
+                                            "rawValue": "500",
+                                            "kind": 10
+                                        },
+                                        "value": 500
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 25,
+                                        "endLine": 25
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 25,
+                                            "endLine": 25,
+                                            "kind": 2,
+                                            "rawValue": "\"quantite\""
+                                        },
+                                        "value": "quantite"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_LNumber",
+                                        "attributes": {
+                                            "startLine": 25,
+                                            "endLine": 25,
+                                            "rawValue": "100",
+                                            "kind": 10
+                                        },
+                                        "value": 100
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 25,
+                                        "endLine": 25
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 25,
+                                            "endLine": 25,
+                                            "kind": 2,
+                                            "rawValue": "\"rupture\""
+                                        },
+                                        "value": "rupture"
+                                    },
+                                    "value": {
+                                        "nodeType": "Expr_ConstFetch",
+                                        "attributes": {
+                                            "startLine": 25,
+                                            "endLine": 25
+                                        },
+                                        "name": {
+                                            "nodeType": "Name",
+                                            "attributes": {
+                                                "startLine": 25,
+                                                "endLine": 25,
+                                                "namespacedName": {
+                                                    "nodeType": "Name_FullyQualified",
+                                                    "attributes": {
+                                                        "startLine": 25,
+                                                        "endLine": 25
+                                                    },
+                                                    "parts": [
+                                                        "App",
+                                                        "Data",
+                                                        "false"
+                                                    ]
+                                                }
+                                            },
+                                            "parts": [
+                                                "false"
+                                            ]
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                }
+                            ]
+                        },
+                        "byRef": false,
+                        "unpack": false
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "attributes": {
+                            "startLine": 26,
+                            "endLine": 26
+                        },
+                        "key": null,
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "attributes": {
+                                "startLine": 26,
+                                "endLine": 26,
+                                "kind": 2
+                            },
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 26,
+                                        "endLine": 26
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 26,
+                                            "endLine": 26,
+                                            "kind": 2,
+                                            "rawValue": "\"nom\""
+                                        },
+                                        "value": "nom"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 26,
+                                            "endLine": 26,
+                                            "kind": 2,
+                                            "rawValue": "\"claviers\""
+                                        },
+                                        "value": "claviers"
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 26,
+                                        "endLine": 26
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 26,
+                                            "endLine": 26,
+                                            "kind": 2,
+                                            "rawValue": "\"prix\""
+                                        },
+                                        "value": "prix"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_LNumber",
+                                        "attributes": {
+                                            "startLine": 26,
+                                            "endLine": 26,
+                                            "rawValue": "100",
+                                            "kind": 10
+                                        },
+                                        "value": 100
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 26,
+                                        "endLine": 26
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 26,
+                                            "endLine": 26,
+                                            "kind": 2,
+                                            "rawValue": "\"quantite\""
+                                        },
+                                        "value": "quantite"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_LNumber",
+                                        "attributes": {
+                                            "startLine": 26,
+                                            "endLine": 26,
+                                            "rawValue": "10",
+                                            "kind": 10
+                                        },
+                                        "value": 10
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 26,
+                                        "endLine": 26
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 26,
+                                            "endLine": 26,
+                                            "kind": 2,
+                                            "rawValue": "\"rupture\""
+                                        },
+                                        "value": "rupture"
+                                    },
+                                    "value": {
+                                        "nodeType": "Expr_ConstFetch",
+                                        "attributes": {
+                                            "startLine": 26,
+                                            "endLine": 26
+                                        },
+                                        "name": {
+                                            "nodeType": "Name",
+                                            "attributes": {
+                                                "startLine": 26,
+                                                "endLine": 26,
+                                                "namespacedName": {
+                                                    "nodeType": "Name_FullyQualified",
+                                                    "attributes": {
+                                                        "startLine": 26,
+                                                        "endLine": 26
+                                                    },
+                                                    "parts": [
+                                                        "App",
+                                                        "Data",
+                                                        "true"
+                                                    ]
+                                                }
+                                            },
+                                            "parts": [
+                                                "true"
+                                            ]
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                }
+                            ]
+                        },
+                        "byRef": false,
+                        "unpack": false
+                    },
+                    {
+                        "nodeType": "Expr_ArrayItem",
+                        "attributes": {
+                            "startLine": 27,
+                            "endLine": 27
+                        },
+                        "key": null,
+                        "value": {
+                            "nodeType": "Expr_Array",
+                            "attributes": {
+                                "startLine": 27,
+                                "endLine": 27,
+                                "kind": 2
+                            },
+                            "items": [
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 27,
+                                        "endLine": 27
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 27,
+                                            "endLine": 27,
+                                            "kind": 2,
+                                            "rawValue": "\"nom\""
+                                        },
+                                        "value": "nom"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 27,
+                                            "endLine": 27,
+                                            "kind": 2,
+                                            "rawValue": "\"souris\""
+                                        },
+                                        "value": "souris"
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 27,
+                                        "endLine": 27
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 27,
+                                            "endLine": 27,
+                                            "kind": 2,
+                                            "rawValue": "\"prix\""
+                                        },
+                                        "value": "prix"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_LNumber",
+                                        "attributes": {
+                                            "startLine": 27,
+                                            "endLine": 27,
+                                            "rawValue": "5",
+                                            "kind": 10
+                                        },
+                                        "value": 5
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 27,
+                                        "endLine": 27
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 27,
+                                            "endLine": 27,
+                                            "kind": 2,
+                                            "rawValue": "\"quantite\""
+                                        },
+                                        "value": "quantite"
+                                    },
+                                    "value": {
+                                        "nodeType": "Scalar_LNumber",
+                                        "attributes": {
+                                            "startLine": 27,
+                                            "endLine": 27,
+                                            "rawValue": "200",
+                                            "kind": 10
+                                        },
+                                        "value": 200
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                },
+                                {
+                                    "nodeType": "Expr_ArrayItem",
+                                    "attributes": {
+                                        "startLine": 27,
+                                        "endLine": 27
+                                    },
+                                    "key": {
+                                        "nodeType": "Scalar_String",
+                                        "attributes": {
+                                            "startLine": 27,
+                                            "endLine": 27,
+                                            "kind": 2,
+                                            "rawValue": "\"rupture\""
+                                        },
+                                        "value": "rupture"
+                                    },
+                                    "value": {
+                                        "nodeType": "Expr_ConstFetch",
+                                        "attributes": {
+                                            "startLine": 27,
+                                            "endLine": 27
+                                        },
+                                        "name": {
+                                            "nodeType": "Name",
+                                            "attributes": {
+                                                "startLine": 27,
+                                                "endLine": 27,
+                                                "namespacedName": {
+                                                    "nodeType": "Name_FullyQualified",
+                                                    "attributes": {
+                                                        "startLine": 27,
+                                                        "endLine": 27
+                                                    },
+                                                    "parts": [
+                                                        "App",
+                                                        "Data",
+                                                        "false"
+                                                    ]
+                                                }
+                                            },
+                                            "parts": [
+                                                "false"
+                                            ]
+                                        }
+                                    },
+                                    "byRef": false,
+                                    "unpack": false
+                                }
+                            ]
+                        },
+                        "byRef": false,
+                        "unpack": false
+                    }
+                ]
+            },
+            "errors": [],
+            "is_read_only": false,
+            "is_write_only": false,
+            "is_intersection_type": false
+        }
+    },
+    "methods": [],
+    "constants": []
+}

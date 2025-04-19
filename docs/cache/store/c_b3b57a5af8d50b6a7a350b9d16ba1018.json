@@ -1,0 +1,198 @@
+{
+    "name": "App\\Controller\\ListeProduitsController",
+    "line": 21,
+    "short_desc": "Contr\u00f4leur ListeProduitsController",
+    "long_desc": "G\u00e8re l'affichage des listes de produits et de distributeurs.",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Controller",
+    "file": "C:\\xampp\\www\\monAppliSymf\/src\\Controller\\ListeProduitsController.php",
+    "relative_file": null,
+    "hash": "85d480aee9c3948b2816508d6e53a6c215efe136",
+    "parent": "Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "Distributeur": "App\\Entity\\Distributeur",
+        "AbstractController": "Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController",
+        "Request": "Symfony\\Component\\HttpFoundation\\Request",
+        "Response": "Symfony\\Component\\HttpFoundation\\Response",
+        "JsonResponse": "Symfony\\Component\\HttpFoundation\\JsonResponse",
+        "Route": "Symfony\\Component\\Routing\\Annotation\\Route",
+        "EntityManagerInterface": "Doctrine\\ORM\\EntityManagerInterface",
+        "Produit": "App\\Entity\\Produit"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "liste": {
+            "name": "liste",
+            "line": 29,
+            "short_desc": "Affiche la liste de tous les produits.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Symfony\\Component\\HttpFoundation\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "La r\u00e9ponse HTTP",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "entityManager": {
+                    "name": "entityManager",
+                    "line": 30,
+                    "short_desc": "Le gestionnaire d'entit\u00e9s Doctrine",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Doctrine\\ORM\\EntityManagerInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "listedistributeur": {
+            "name": "listedistributeur",
+            "line": 51,
+            "short_desc": "Affiche la liste de tous les distributeurs.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Symfony\\Component\\HttpFoundation\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "La r\u00e9ponse HTTP",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "entityManager": {
+                    "name": "entityManager",
+                    "line": 52,
+                    "short_desc": "Le gestionnaire d'entit\u00e9s Doctrine",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Doctrine\\ORM\\EntityManagerInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "eager": {
+            "name": "eager",
+            "line": 69,
+            "short_desc": "Affiche la liste des produits avec chargement eager.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Symfony\\Component\\HttpFoundation\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "La r\u00e9ponse HTTP",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "entityManager": {
+                    "name": "entityManager",
+                    "line": 70,
+                    "short_desc": "Le gestionnaire d'entit\u00e9s Doctrine",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Doctrine\\ORM\\EntityManagerInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "apiTest": {
+            "name": "apiTest",
+            "line": 86,
+            "short_desc": "Retourne une r\u00e9ponse JSON avec les noms des produits.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Symfony\\Component\\HttpFoundation\\JsonResponse",
+                    false
+                ]
+            ],
+            "hint_desc": "La r\u00e9ponse JSON",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "entityManager": {
+                    "name": "entityManager",
+                    "line": 87,
+                    "short_desc": "Le gestionnaire d'entit\u00e9s Doctrine",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Doctrine\\ORM\\EntityManagerInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,50 @@
+{
+    "name": "App\\Controller\\RedirectController",
+    "line": 14,
+    "short_desc": "Contr\u00f4leur RedirectController\nG\u00e8re la redirection de la page d'accueil vers la liste des produits.",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Controller",
+    "file": "C:\\xampp\\www\\monAppliSymf\/src\\Controller\\RedirectController.php",
+    "relative_file": null,
+    "hash": "9680c3a71117db8dccf9630475ed433b42faf0b1",
+    "parent": "Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "AbstractController": "Symfony\\Bundle\\FrameworkBundle\\Controller\\AbstractController",
+        "RedirectResponse": "Symfony\\Component\\HttpFoundation\\RedirectResponse",
+        "Route": "Symfony\\Component\\Routing\\Annotation\\Route"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "index": {
+            "name": "index",
+            "line": 17,
+            "short_desc": null,
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Symfony\\Component\\HttpFoundation\\RedirectResponse",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

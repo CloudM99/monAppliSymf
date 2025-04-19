@@ -1,0 +1,119 @@
+{
+    "name": "App\\Entity\\Reference",
+    "line": 11,
+    "short_desc": "Repr\u00e9sente une entit\u00e9 de r\u00e9f\u00e9rence avec un num\u00e9ro unique.",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Entity",
+    "file": "C:\\xampp\\www\\monAppliSymf\/src\\Entity\\Reference.php",
+    "relative_file": null,
+    "hash": "50bc80b47d8599ba4a54bd8a8dfe89f3875f9b77",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "ReferenceRepository": "App\\Repository\\ReferenceRepository",
+        "ORM": "Doctrine\\ORM\\Mapping"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "getId": {
+            "name": "getId",
+            "line": 33,
+            "short_desc": "Obtenir l'identifiant unique de la r\u00e9f\u00e9rence.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getNumero": {
+            "name": "getNumero",
+            "line": 43,
+            "short_desc": "Obtenir le num\u00e9ro unique associ\u00e9 \u00e0 la r\u00e9f\u00e9rence.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setNumero": {
+            "name": "setNumero",
+            "line": 54,
+            "short_desc": "D\u00e9finir le num\u00e9ro unique associ\u00e9 \u00e0 la r\u00e9f\u00e9rence.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "App\\Entity\\Reference",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "numero": {
+                    "name": "numero",
+                    "line": 54,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

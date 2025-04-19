@@ -1,0 +1,638 @@
+{
+    "name": "App\\Entity\\Produit",
+    "line": 16,
+    "short_desc": "Repr\u00e9sente une entit\u00e9 de produit avec divers attributs et relations.",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Entity",
+    "file": "C:\\xampp\\www\\monAppliSymf\/src\\Entity\\Produit.php",
+    "relative_file": null,
+    "hash": "b8359c5ce35cf20a8c053962b38cea5aeb27e81f",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "ProduitRepository": "App\\Repository\\ProduitRepository",
+        "ArrayCollection": "Doctrine\\Common\\Collections\\ArrayCollection",
+        "Collection": "Doctrine\\Common\\Collections\\Collection",
+        "ORM": "Doctrine\\ORM\\Mapping",
+        "Assert": "Symfony\\Component\\Validator\\Constraints",
+        "ExecutionContextInterface": "Symfony\\Component\\Validator\\Context\\ExecutionContextInterface",
+        "UniqueEntity": "Symfony\\Bridge\\Doctrine\\Validator\\Constraints\\UniqueEntity"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 85,
+            "short_desc": "Constructeur pour initialiser la collection de distributeurs.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getId": {
+            "name": "getId",
+            "line": 95,
+            "short_desc": "Obtenir l'identifiant unique du produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getPrix": {
+            "name": "getPrix",
+            "line": 105,
+            "short_desc": "Obtenir le prix du produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "float",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setPrix": {
+            "name": "setPrix",
+            "line": 116,
+            "short_desc": "D\u00e9finir le prix du produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "App\\Entity\\Produit",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "prix": {
+                    "name": "prix",
+                    "line": 116,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "float",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "getQuantite": {
+            "name": "getQuantite",
+            "line": 128,
+            "short_desc": "Obtenir la quantit\u00e9 du produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setQuantite": {
+            "name": "setQuantite",
+            "line": 139,
+            "short_desc": "D\u00e9finir la quantit\u00e9 du produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "App\\Entity\\Produit",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "quantite": {
+                    "name": "quantite",
+                    "line": 139,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "isRupture": {
+            "name": "isRupture",
+            "line": 151,
+            "short_desc": "V\u00e9rifier si le produit est en rupture de stock.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setRupture": {
+            "name": "setRupture",
+            "line": 162,
+            "short_desc": "D\u00e9finir l'\u00e9tat de rupture de stock du produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "App\\Entity\\Produit",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "rupture": {
+                    "name": "rupture",
+                    "line": 162,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "getLienImage": {
+            "name": "getLienImage",
+            "line": 174,
+            "short_desc": "Obtenir le lien de l'image du produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setLienImage": {
+            "name": "setLienImage",
+            "line": 185,
+            "short_desc": "D\u00e9finir le lien de l'image du produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "App\\Entity\\Produit",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "lienImage": {
+                    "name": "lienImage",
+                    "line": 185,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ],
+                        [
+                            "null",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "getReference": {
+            "name": "getReference",
+            "line": 197,
+            "short_desc": "Obtenir la r\u00e9f\u00e9rence associ\u00e9e au produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "App\\Entity\\App\\Entity\\Reference",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setReference": {
+            "name": "setReference",
+            "line": 208,
+            "short_desc": "D\u00e9finir la r\u00e9f\u00e9rence associ\u00e9e au produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "App\\Entity\\Produit",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "reference": {
+                    "name": "reference",
+                    "line": 208,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "App\\Entity\\App\\Entity\\Reference",
+                            false
+                        ],
+                        [
+                            "null",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "getNom": {
+            "name": "getNom",
+            "line": 220,
+            "short_desc": "Obtenir le nom du produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setNom": {
+            "name": "setNom",
+            "line": 231,
+            "short_desc": "D\u00e9finir le nom du produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "App\\Entity\\Produit",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "nom": {
+                    "name": "nom",
+                    "line": 231,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "getDistributeurs": {
+            "name": "getDistributeurs",
+            "line": 243,
+            "short_desc": "Obtenir la collection de distributeurs associ\u00e9s \u00e0 ce produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Doctrine\\Common\\Collections\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "addDistributeur": {
+            "name": "addDistributeur",
+            "line": 254,
+            "short_desc": "Ajouter un distributeur au produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "App\\Entity\\Produit",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "distributeur": {
+                    "name": "distributeur",
+                    "line": 254,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Entity\\Distributeur",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "removeDistributeur": {
+            "name": "removeDistributeur",
+            "line": 270,
+            "short_desc": "Retirer un distributeur du produit.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "App\\Entity\\Produit",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "distributeur": {
+                    "name": "distributeur",
+                    "line": 270,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Entity\\Distributeur",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        },
+        "isPrixQuantiteValid": {
+            "name": "isPrixQuantiteValid",
+            "line": 285,
+            "short_desc": "Valider que le prix et la quantit\u00e9 sont des valeurs positives.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isContentValid": {
+            "name": "isContentValid",
+            "line": 297,
+            "short_desc": "Valider que le nom du produit ne contient pas de mots interdits.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "is_intersection_type": false,
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "context": {
+                    "name": "context",
+                    "line": 298,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Symfony\\Component\\Validator\\Context\\ExecutionContextInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": 0,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false,
+                    "is_read_only": false,
+                    "is_intersection_type": false
+                }
+            }
+        }
+    },
+    "constants": []
+}
