@@ -26,7 +26,7 @@ class ListeProduitsController extends AbstractController
      * @param EntityManagerInterface $entityManager Le gestionnaire d'entités Doctrine
      * @return Response La réponse HTTP
      */
-    #[Route('/', name: 'liste')]
+    #[Route('/liste', name: 'liste')]
     public function liste(EntityManagerInterface $entityManager)
     {
 
