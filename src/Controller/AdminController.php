@@ -90,7 +90,7 @@ class AdminController extends AbstractController
         $produitRepository=$entityManager->getRepository(Produit::class);
         $produit=$produitRepository->find($id);
 
-        $img=$produit->getLienImage();
+        $currentImage=$produit->getLienImage();
         $formProduit=$this->createForm(ProduitType::class,$produit);
 
         $formProduit->add('creer', SubmitType::class, array(
@@ -101,7 +101,7 @@ class AdminController extends AbstractController
 
         if($request->isMethod('post')&&$formProduit->isValid()) {
             $file=$formProduit['lienImage']->getData();
-                if(!is_string($file)){
+                if($file !== null && !is_string($file)){
                     $filename=$file->getClientOriginalName();
                     $file->move(
                         $this->getParameter('images_directory'),
@@ -109,7 +109,7 @@ class AdminController extends AbstractController
                     );
                     $produit->setLienImage($filename);
                 } else {
-                    $produit->setLienImage($img);
+                    $produit->setLienImage($currentImage);
                 }
 
                 $entityManager->persist($produit);
@@ -147,16 +147,19 @@ class AdminController extends AbstractController
     }
 
     /**
-     * Insère un nouveau distributeur dans la base de données.
+     * Gère les opérations CRUD pour les distributeurs.
      *
      * @param Request $request La requête HTTP
      * @param EntityManagerInterface $entityManager Le gestionnaire d'entités Doctrine
      * @return Response La réponse HTTP
      */
 
-    #[Route('/insert_distributeur', name: 'insert_distributeur')]
-    public function insert_distributeur(Request $request, EntityManagerInterface $entityManager)
+    #[Route('/gestion_distributeur', name: 'gestion_distributeur')]
+    public function gestion_distributeur(Request $request, EntityManagerInterface $entityManager)
     {
+        $distributeurRepository = $entityManager->getRepository(Distributeur::class);
+        $distributeurs = $distributeurRepository->findAll();
+
         $distributeur = new Distributeur();
         $formDistributeur = $this->createForm(DistributeurType::class, $distributeur);
 
@@ -175,14 +178,44 @@ class AdminController extends AbstractController
             // Ajouter un message flash pour le succès
             $this->addFlash('success', 'Un nouveau distributeur a été ajouté.');
 
-            // Redirection vers la page de liste
-            return $this->redirectToRoute('liste');
+            // Redirection vers la même page pour rafraîchir la liste
+            return $this->redirectToRoute('gestion_distributeur');
         }
 
         // Si le formulaire n'est pas soumis ou invalide, afficher le formulaire
-        return $this->render('admin/distrib.html.twig', [
+        return $this->render('admin/gestion_distributeur.html.twig', [
             'form' => $formDistributeur->createView(),
+            'distributeurs' => $distributeurs,
         ]);
     }
+    #[Route('/delete_distributeur/{id}', name: 'delete_distributeur')]
+    public function delete_distributeur(Request $request, $id, EntityManagerInterface $entityManager): Response
+    {
+        $distributeurRepository = $entityManager->getRepository(Distributeur::class);
+        $distributeur = $distributeurRepository->find($id);
+
+        if (!$distributeur) {
+            throw $this->createNotFoundException('Le distributeur avec l\'ID ' . $id . ' n\'existe pas.');
+        }
+
+        // Vérifier si le distributeur est utilisé par un produit
+        $query = $entityManager->createQuery(
+            'SELECT COUNT(p) FROM App\Entity\Produit p JOIN p.distributeurs d WHERE d.id= :distributeurId'
+        )->setParameter('distributeurId', $id);
+        $count = $query->getSingleScalarResult();
+        if($count > 0){
+            $this->addFlash('error', 'Impossible de supprimer le distributeur car il est relié à un produit.');
+            return $this->redirectToRoute('gestion_distributeur');
+        }
+
+        $entityManager->remove($distributeur);
+        $entityManager->flush();
+
+        $this->addFlash('success', 'Le distributeur a été supprimé.');
+
+        return $this->redirectToRoute('gestion_distributeur');
+    }
+
+
 
 }
