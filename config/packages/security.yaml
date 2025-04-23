@@ -49,5 +49,5 @@ security:
     # Contrôle d'accès pour différentes sections du site
     access_control:
         - { path: ^/admin, roles: ROLE_ADMIN }
-        - { path: /register, roles : ROLE_ADMIN, ROLE_SUPER_ADMIN }
+        - { path: /register, roles: [ROLE_ADMIN, ROLE_SUPER_ADMIN] }
 
